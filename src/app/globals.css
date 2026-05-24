@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand overrides — Claude Code fills these in per-target */
+  --color-background: #ffffff;
+  --color-foreground: #0a0a0a;
+  --color-primary: #163e54;
+  --color-primary-foreground: #ffffff;
+  --color-accent: #c9a66b;
+  --color-accent-foreground: #0a0a0a;
+  --color-muted: #f4f4f5;
+  --color-muted-foreground: #71717a;
+  --color-border: #e4e4e7;
+  --color-card: #ffffff;
+  --color-card-foreground: #0a0a0a;
+
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  * { border-color: var(--color-border); box-sizing: border-box; }
+  body { font-family: var(--font-sans); }
+}
